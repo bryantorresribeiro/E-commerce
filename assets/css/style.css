@@ -1,0 +1,245 @@
+/* HARD RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/* HARD RESET*/
+
+/* VARIAVEIS*/
+:root{
+    font-family: 'Inter', sans-serif;
+    --cor-principal:#F5F5F5;
+    --cor-texto-primaria:#828282;
+    --cor-texto-secundaria:#333333;;
+    --cor-butoes: #2E245E;
+    --cor-butoes-search: #6B54DE;
+}
+/* VARIAVEIS*/
+
+/* FONTES */
+    h1{font-size: 26px; font-weight: bold;}
+    h2{font-size: 22px; font-weight: bold;}
+    h3{font-size: 18px; font-weight: bold;}
+    p, a{font-size: 16px;}
+    span{font-size: 14px;}
+/* FONTES */
+
+/* GERAL */
+html{scroll-behavior: smooth;}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{width: 100%;}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* GERAL */
+
+/* PARTE SUPERIOR DE NAVEGAÇÃO */
+.topo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-radius: 0px;
+    background-color: var(--cor-principal);
+}
+.topo ul{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+.topo li{
+    color: var(--cor-texto-primaria);
+    margin: 0 5px;
+    list-style-type: none;
+}
+.topo .black{color: var(--cor-texto-secundaria);}
+/* PARTE SUPERIOR DE NAVEGAÇÃO */
+
+/* MENU DE ROUPAS */
+.vitrine{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    margin: 25px 5px;
+    border: 2px solid var(--cor-principal);
+}
+.card figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 154px;
+    width: 292px;
+    border-radius: 0px;
+    background-color: var(--cor-principal);
+}
+.card article{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 280px;
+    margin-left: 20px;
+    border-radius: 0px;
+    padding: 20px, 15px, 20px, 15px;
+    margin-top: 20px;
+}
+.card h2, p, span, a{margin-top: 10px;}
+a, p{
+    color: var(--cor-texto-primaria);
+    font-weight: inherit;
+}
+span{color: var(--cor-butoes);}
+.button{
+    width: 90px;
+    height: 30px;
+    border-radius: 0px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: inherit;
+    background-color: var(--cor-butoes);
+    color: var(--cor-principal);
+}
+/* MENU DE ROUPAS */
+
+/* CAMPO DE PESQUISA E COMPRA */
+.search, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.search input{
+    height: 40px;
+    width: 296px;
+    padding-left: 85px;
+    border-radius: 0px;
+    margin-top: 10px;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-secundaria);
+    border: none;
+}
+.search button{
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: var(--cor-principal);
+    background-color: var(--cor-butoes-search);
+    border: none;
+}
+.shoppingcart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 296px;
+    height:344px;
+    background-color: var(--cor-principal);
+}
+.shoppingcart h2{
+    width: 294px;
+    height: 50px;
+    background-color: var(--cor-butoes-search);
+    color: var(--cor-principal);
+    padding:10px 0 0 25px;
+}
+.shoppingcart h3{margin-top: 100px;}
+.size{color: var(--cor-texto-primaria);}
+/* CAMPO DE PESQUISA E COMPRA */
+
+/* SCROOLBAR */
+.rolagem{margin: 20px 0;}
+.rolagem img{
+    width: 50px;
+    height: 50px;
+}
+/* SCROOLBAR */
+
+/* VERSÃO DESKTOP */
+@media screen and (min-width: 612px){
+
+    /* CAMPO DE PESQUISA E COMPRA */
+    .search form{
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+    .search, form{justify-content: flex-start;}
+    .shoppingcart{
+        height: 344px;
+        width: 347px;
+        border-radius: 0px;
+    }
+    .shoppingcart h2{
+        width: 345px;
+        height: 50px;
+        padding-left: 60px;
+    }
+    .search input{
+        width: 246px;
+        height: 50px;
+    }
+    .search button{
+        width: 96px;
+        height: 50px;
+        border-radius: 0px;
+        margin-left: 5px;
+    }
+    /* CAMPO DE PESQUISA E COMPRA */
+
+    /* HOVERS */
+    .card:hover{border: 2px solid;}
+    .hover:hover{color: var(--cor-butoes);}
+    /* HOVERS */
+}
+@media screen and (min-width:1024px){
+
+    /* PARTE SUPERIOR DE NAVEGAÇÃO */
+    .topo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .topo h1, .topo ul{margin: 0 110px;}
+    /* PARTE SUPERIOR DE NAVEGAÇÃO */
+}
+@media screen and (min-width:1389px){
+
+    /* GERAL */
+    body{margin: 0 115px;}
+    main{flex-direction: row;}
+    /* GERAL */
+
+    /* PARTE SUPERIOR DE NAVEGAÇÃO */
+    .topo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .topo h1, .topo ul{margin: 0 110px;}
+    /* PARTE SUPERIOR DE NAVEGAÇÃO */
+
+    /* CAMPO DE PESQUISA E COMPRA */
+    .search{margin: 40px 150px 0 50px;}
+    /* CAMPO DE PESQUISA E COMPRA */
+
+    /* SCROOLBAR DESATIVADO*/
+    .rolagem{display: none;}
+    /* SCROOLBAR DESATIVADO */
+}
+/* VERSÃO DESKTOP */
