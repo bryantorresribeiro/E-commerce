@@ -1,7 +1,7 @@
 # Desktop:
 
-![Box](https://github.com/bryantorresribeiro/E-commerce/blob/main/assets/img/Ecomercedesktop.gif)
+![Box](https://github.com/bryantorresribeiro/E-commerce/blob/main/assets/img/E-comercedesktop.gif)
 
 # Mobile:
 
-![Box](https://github.com/bryantorresribeiro/E-commerce/blob/main/assets/img/Ecomercemobile.gif)
+![Box](https://github.com/bryantorresribeiro/E-commerce/blob/main/assets/img/E-comercemobile.gif)
